@@ -1,0 +1,26 @@
+{
+  "name": "jasmine-precondition",
+  "version": "0.0.1",
+  "description": "A Jasmine command to ease setting up asynchronous pre-conditions before tests",
+  "main": "lib/jasmine-precondition.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagorg/jasmine-precondition"
+  },
+  "keywords": [
+    "jasmine",
+    "precondition"
+  ],
+  "author": "Tiago Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiagorg/jasmine-precondition/issues"
+  },
+  "homepage": "https://github.com/tiagorg/jasmine-precondition",
+  "devDependencies": {
+    "jasmine": "^2.1.1"
+  }
+}
