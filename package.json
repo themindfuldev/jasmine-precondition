@@ -1,7 +1,7 @@
 {
   "name": "jasmine-precondition",
-  "version": "0.0.1",
-  "description": "A Jasmine command to ease setting up asynchronous pre-conditions before tests",
+  "version": "0.0.2",
+  "description": "A Jasmine instruction to ease setting up asynchronous pre-conditions before, during and after tests",
   "main": "lib/jasmine-precondition.js",
   "scripts": {
     "test": "jasmine"
