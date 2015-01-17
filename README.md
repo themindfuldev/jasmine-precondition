@@ -12,6 +12,14 @@ While it is utterly possible to [re-implement ```waitsFor```](https://gist.githu
 
 Thus, the ```preCondition``` instruction defined here will simply poll a given conditional function at a certain time interval, and once its condition is met the callback ```done``` will be fired off.
 
+## Installation
+
+* Browser-version: 
+  - [jasmine-precondition.js](https://raw.githubusercontent.com/tiagorg/jasmine-precondition/master/lib/jasmine-precondition.js`)
+  - [jasmine-precondition.min.js](https://raw.githubusercontent.com/tiagorg/jasmine-precondition/master/lib/jasmine-precondition.min.js`)
+* Node.js: 
+  - ```npm install jasmine-precondition``` 
+
 ## Usage
 
 ```
