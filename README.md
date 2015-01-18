@@ -23,7 +23,7 @@ Thus, the ```preCondition``` instruction defined here will simply poll a given c
 ## Usage
 
 ```
-preCondition(condition, done, interval)
+preCondition(condition, done, interval);
 ```
 
 where:
