@@ -15,8 +15,8 @@ Thus, the ```preCondition``` instruction defined here will simply poll a given c
 ## Installation
 
 * Browser-version: 
-  - [jasmine-precondition.js](https://raw.githubusercontent.com/tiagorg/jasmine-precondition/master/lib/jasmine-precondition.js`)
-  - [jasmine-precondition.min.js](https://raw.githubusercontent.com/tiagorg/jasmine-precondition/master/lib/jasmine-precondition.min.js`)
+  - [jasmine-precondition.js](https://raw.githubusercontent.com/tiagorg/jasmine-precondition/master/lib/jasmine-precondition.js)
+  - [jasmine-precondition.min.js](https://raw.githubusercontent.com/tiagorg/jasmine-precondition/master/lib/jasmine-precondition.min.js)
 * Node.js: 
   - ```npm install jasmine-precondition``` 
 
