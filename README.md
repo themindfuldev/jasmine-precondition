@@ -1,4 +1,4 @@
-# jasmine-precondition [![Build Status](https://travis-ci.org/tiagorg/jasmine-precondition.svg?branch=master)](https://travis-ci.org/tiagorg/jasmine-precondition) [![Coverage Status](https://coveralls.io/repos/tiagorg/jasmine-precondition/badge.svg?branch=master)](https://coveralls.io/r/tiagorg/jasmine-precondition?branch=master)
+# jasmine-precondition [![Build Status](https://travis-ci.org/tiagorg/jasmine-precondition.svg?branch=master)](https://travis-ci.org/tiagorg/jasmine-precondition) [![Coverage Status](https://coveralls.io/repos/tiagorg/jasmine-precondition/badge.svg?branch=master)](https://coveralls.io/r/tiagorg/jasmine-precondition?branch=master) [![npm version](https://badge.fury.io/js/jasmine-precondition.svg)](http://badge.fury.io/js/jasmine-precondition)
 
 A Jasmine instruction to ease setting up asynchronous pre-conditions before, during and after tests
 
