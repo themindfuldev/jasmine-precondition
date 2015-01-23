@@ -4,6 +4,39 @@ var preCondition = require('../lib/jasmine-precondition');
 
 describe('the preCondition instruction', function () {
 
+  it('should be loaded', function(){
+    expect(typeof preCondition === 'function').toBeTruthy();
+  });
+
+  describe('initialization', function() {
+
+    it('should get executed when no interval is passed', function (done) {
+      preCondition(function(){
+        return true;
+      }, done);
+    });
+
+    it('should fail when no condition is passed', function (done) {
+      try {
+        preCondition();
+      }
+      catch (e) {
+        expect(e.message).toBe('preCondition: the first parameter must be passed as the condition function');
+        done();
+      }
+    });
+
+    it('should fail when no done is passed', function (done) {
+      try {
+        preCondition(jasmine.createSpy('fake'));
+      }
+      catch (e) {
+        expect(e.message).toBe('preCondition: the second parameter must be passed as the done callback');
+        done();
+      }
+    });
+  });
+
   describe('working with counters', function() {
 
     var counter1 = 0,
@@ -38,36 +71,4 @@ describe('the preCondition instruction', function () {
     });
 
   });
-
-  describe('usage', function() {
-
-    it('should get executed when no interval is passed', function (done) {
-      preCondition(function(){
-        return true;
-      }, done);
-    });
-
-    it('should fail when no condition is passed', function (done) {
-      try {
-        preCondition();
-      }
-      catch (e) {
-        expect(e.message).toBe('preCondition: the first parameter must be passed as the condition function');
-        done();
-      }
-    });
-
-    it('should fail when no done is passed', function (done) {
-      try {
-        preCondition(function(){
-          return true;
-        });
-      }
-      catch (e) {
-        expect(e.message).toBe('preCondition: the second parameter must be passed as the done callback');
-        done();
-      }
-    });
-  });
-
 });
