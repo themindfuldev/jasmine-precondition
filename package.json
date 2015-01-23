@@ -4,7 +4,10 @@
   "description": "A Jasmine instruction to ease setting up asynchronous pre-conditions before, during and after tests",
   "main": "lib/jasmine-precondition.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "cover": "istanbul cover --report html --print detail jasmine",
+    "view-cover": "istanbul report html && open ./coverage/index.html",
+    "travis-test": "npm run phantom && npm run cover && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/tiagorg/jasmine-precondition",
   "devDependencies": {
+    "istanbul": "^0.3.5",
     "jasmine": "^2.1.1"
   }
 }
