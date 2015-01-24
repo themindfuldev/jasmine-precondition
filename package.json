@@ -7,7 +7,7 @@
     "test": "jasmine",
     "cover": "istanbul cover --report html --print detail jasmine",
     "view-cover": "istanbul report html && open ./coverage/index.html",
-    "travis-test": "npm run phantom && npm run cover && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
+    "travis-test": "istanbul cover jasmine --captureExceptions && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
