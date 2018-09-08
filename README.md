@@ -20,6 +20,9 @@ Thus, the ```preCondition``` instruction defined here will simply poll a given c
   - [jasmine-precondition.min.js](https://raw.githubusercontent.com/tiagorg/jasmine-precondition/master/lib/jasmine-precondition.min.js)
 * Node.js: 
   - ```npm install jasmine-precondition``` 
+* Karma - more on [karma-jasmine-precondition](https://github.com/themindfuldev/karma-jasmine-precondition)
+  - ```npm install karma-jasmine-precondition```
+
 
 ## Usage
 
