@@ -4,10 +4,10 @@
   "description": "A Jasmine instruction to ease setting up asynchronous pre-conditions before, during and after tests",
   "main": "lib/jasmine-precondition.js",
   "scripts": {
-    "test": "jasmine",
-    "cover": "istanbul cover --report html --print detail jasmine",
-    "view-cover": "istanbul report html && open ./coverage/index.html",
-    "travis-test": "istanbul cover jasmine --captureExceptions && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "node ./node_modules/jasmine/bin/jasmine.js",
+    "cover": "node ./node_modules/istanbul/index.js cover --report html --print detail jasmine",
+    "view-cover": "node ./node_modules/istanbul/lib/cli.js report html && open ./coverage/index.html",
+    "travis-test": "node ./node_modules/istanbul/lib/cli.js cover jasmine --captureExceptions && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/themindfuldev/jasmine-precondition",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "istanbul": "^0.3.5",
     "jasmine": "^2.1.1"
   }
